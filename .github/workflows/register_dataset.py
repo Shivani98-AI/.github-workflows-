@@ -8,7 +8,7 @@ api = HfApi()
 api.create_repo(repo_id=DATASET_REPO, token=HF_TOKEN, repo_type="dataset", exist_ok=True)
 
 upload_file(
-    path_or_fileobj="PG Program/Advanced ML/Last try/tourism_project/data/tourism.csv",
+    path_or_fileobj=".github/workflows/tourism.csv",
     path_in_repo="tourism.csv",
     repo_id=DATASET_REPO,
     repo_type="dataset",
