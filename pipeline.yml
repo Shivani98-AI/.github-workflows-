@@ -19,7 +19,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python tourism_project/register_dataset.py
+          python register_dataset.py
 
   data-prep:
     needs: register-dataset
